@@ -1,0 +1,85 @@
+/* errors styles  */
+
+.errors_container {
+    width: 100%;
+    display: inline-block;
+    margin: auto;
+    transition: width 0.1s;
+    display: flex;
+    min-height: 100px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 640px) {
+    .errors_container {
+        width: 640px;
+    }
+}
+
+@media (min-width: 768px) {
+    .errors_container {
+        width: 768px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .errors_container {
+        width: 1024px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .errors_container {
+        width: 1280px;
+    }
+}
+
+@media (min-width: 1536px) {
+    .errors_container {
+        width: 1536px;
+    }
+}
+
+.errors_row {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: nowrap;
+}
+
+.errors_col {
+    padding: 15px;
+    background-color: #ff000033;
+    border-radius: 10px;
+    border: none;
+    color: #ff0000;
+    margin: 5px;
+}
+
+.errors_col .animate {
+    position: absolute;
+    left: -100px;
+    width: 100px;
+    height: 100px;
+    background: blue;
+    -webkit-animation: slide 0.5s forwards;
+    -webkit-animation-delay: 2s;
+    animation: slide 0.5s forwards;
+    animation-delay: 2s;
+}
+
+@-webkit-keyframes slide {
+    100% {
+        left: 0;
+    }
+}
+
+@keyframes slide {
+    100% {
+        left: 0;
+    }
+}
